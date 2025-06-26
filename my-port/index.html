@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+<body style="background-color: powderblue;">
+  <nav id="desktop-nav">
+    <div class="logo" id="home">My Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">My Portfolio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="pic.jpg" alt="Bharath profile picture">
+    </div>
+    <div class="section__text">
+      <p class="title">Hello, I'm</p>
+      <h1 class="title">Bharath</h1>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kNS0xMF8xLnBuZw.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kusetty-bharath-a4a901228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Bharath-87'">
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="text-container">
+      <p>
+        I am K. Bharath, a B.Tech Computer Science and Engineering student at NBKR Institute of Science & Technology (NBKRIST), currently maintaining a CGPA of 8.86 (till 5th semester). My core interest lies in Python programming, through which I have developed a strong foundation in software development and machine learning. I have applied Python to build real-time projects like a Tic-Tac-Toe game and completed a machine learning internship at Bharat Intern, where I worked on data preprocessing, model training, and evaluation with real-world datasets.
+
+Alongside Python, I am skilled in HTML, CSS, JavaScript, and have hands-on experience in developing interactive and responsive web applications such as a portfolio website, calendar, and calculator. My academic foundation is supported by coursework in Data Structures, DBMS, and Data Mining, and I hold certifications in Python, SQL, and Ethical Hacking. I am passionate about creating impactful projects and continuously expanding my technical skill set.
+      </p>
+    </div>
+  </section>
+  <section id="skills">
+    <p class="section_text_p1"></p>
+    <h1 class="title">My Skills</h1>
+    <div class="text-container">
+      <p>
+        <h4>Skills and Learning</h4>
+        Python: Core programming language with strong skills in logic building, problem-solving, and application development. Built mini-projects like Tic-Tac-Toe and applied Python in machine learning for real-world datasets.
+
+HTML & CSS: Proficient in designing semantic, responsive websites using Flexbox and Grid layouts.
+
+JavaScript: Familiar with DOM manipulation and basic interactivity for frontend development.
+
+Other Languages: Basic knowledge of C, Java, and MySQL.
+
+Developed static and interactive web applications while experimenting with CSS frameworks and JavaScript libraries.
+        <h4>Future Goals</h4>
+        I aim to strengthen my foundation in Data Structures and Algorithms (DSA) using Python to improve my problem-solving and coding efficiency.
+My goal is to prepare for competitive programming and technical interviews through regular practice on platforms like HackerRank
+        
+      </p>
+    </div>
+  </section>
+  <section id="projects">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-container">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="https://saiwebs.com/wp-content/uploads/2022/12/ccz.png" alt="project 1" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Bharath-87/Portfolio'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://bharath-87.github.io/Portfolio/'">Demo</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="https://play-lh.googleusercontent.com/VK7Dsey7nNEj0MjgG4vwh_MsldUspQj7cX3XjHI-R4NXPfP0ZEXQqrm3CBaCVBhhhKw=w240-h480-rw" alt="Project 2" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Number Guessing Game</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Bharath-87/Code-Clause-internship'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://colab.research.google.com/github/Bharath-87/Code-Clause-internship/blob/main/Number%20Guessing%20Game%20/%20Number_Guessing_Game.ipynb'">Demo</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="https://p7.hiclipart.com/preview/833/721/133/calculator-clip-art-calculator.jpg" alt="Project 3" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Calculator</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Bharath-87/Calculator/'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://bharath-87.github.io/Calculator/'">Demo</button>
+        </div>
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img src="https://media.istockphoto.com/id/181866332/photo/red-wall-calendar.jpg?s=612x612&w=0&k=20&c=FpWwH-rY03pLmNsibkcJ_zbnqCIx1sbI5pRsQ9q5yLg=" alt="Project 4" class="project-img">
+      </div>
+      <h2 class="experience-sub-title project-title">Calendar</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Bharath-87/Calendar/'">Github</button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://bharath-87.github.io/Calendar/'">Demo</button>
+      </div>
+    </div>
+  </section>
+  <section id="resume">
+    <h1 class="title">My Resume</h1>
+    <p class="section_text_p1">Download here !!</p>
+    <button class="download"><a href="https://drive.google.com/file/d/12BRUA-So7GaqPPxgAkpwp6w8XegnW5gt/view?usp=sharing">Download</a></button>
+  </section>
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:kusettybharath7111@gmail.com">kusettybharath7111@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa fa-linkedin-square"></i>
+        <p><a href="https://www.linkedin.com/in/kusetty-bharath-a4a901228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <i class="fa-brands fa-instagram"></i>
+        <p><a href="https://www.instagram.com/itz_bharath__7?igsh=Nm94YmxlbG81OGt6">Instagram</a></p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa fa-phone"></i>
+        <p>8919431641</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+    <p>Copyright &#169; 2024 Bharath. All Rights Reserved.</p>
+  </footer>
+  <script src="scri.js"></script>
+</body>
+</html>
